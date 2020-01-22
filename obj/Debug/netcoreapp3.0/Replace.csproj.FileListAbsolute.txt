@@ -1,0 +1,11 @@
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\bin\Debug\netcoreapp3.0\Replace.exe
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\bin\Debug\netcoreapp3.0\Replace.deps.json
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\bin\Debug\netcoreapp3.0\Replace.runtimeconfig.json
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\bin\Debug\netcoreapp3.0\Replace.runtimeconfig.dev.json
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\bin\Debug\netcoreapp3.0\Replace.dll
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\bin\Debug\netcoreapp3.0\Replace.pdb
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\obj\Debug\netcoreapp3.0\Replace.csprojAssemblyReference.cache
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\obj\Debug\netcoreapp3.0\Replace.AssemblyInfoInputs.cache
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\obj\Debug\netcoreapp3.0\Replace.AssemblyInfo.cs
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\obj\Debug\netcoreapp3.0\Replace.dll
+C:\Users\luqui\Documents\Programación\Proyectos\Replace\obj\Debug\netcoreapp3.0\Replace.pdb
