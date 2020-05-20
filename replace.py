@@ -15,7 +15,7 @@ __author__ = "LuckJMG"
 __copyright__ = "Copyright 2020, LuckJMG"
 __credits__ = ["LuckJMG"]
 
-__license__ = "GPL"
+__license__ = "MIT"
 __version__ = "1.0.0"
 __maintainer__ = "LuckJMG"
 __email__ = "lucas.mosquera13@gmail.com"
