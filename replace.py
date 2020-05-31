@@ -1,25 +1,25 @@
 #!/usr/bin/env python
 
-'''replace.py: Add replacement functions in strings.
+'''Replace.py: Add replacement functions in strings.
 
 Add functions mostly related to the variables strings
 and to replace strings in it, with general formats.
 
 Functions:
-to_array(string) 		-- converts string to an array
-comma_to_point(string)	-- replaces the commas with points
-point_to_comma(string)	-- replaces the points with commas
+to_array(string) 		-- Converts string to an array
+comma_to_point(string)	-- Replaces the commas with points
+point_to_comma(string)	-- Replaces the points with commas
 '''
 
-__author__ = "LuckJMG"
-__copyright__ = "Copyright 2020, LuckJMG"
-__credits__ = ["LuckJMG"]
+__author__ 		= "LuckJMG"
+__copyright__ 	= "Copyright 2020, LuckJMG"
+__credits__ 	= ["LuckJMG"]
 
-__license__ = "MIT"
-__version__ = "1.0.0"
-__maintainer__ = "LuckJMG"
-__email__ = "lucas.mosquera13@gmail.com"
-__status__ = "Production"
+__license__ 	= "MIT"
+__version__ 	= "1.0.1"
+__maintainer__ 	= "LuckJMG"
+__email__ 		= "lucas.mosquera13@gmail.com"
+__status__ 		= "Production"
 
 def to_array(string):
 	"""Converts a string to an array.
