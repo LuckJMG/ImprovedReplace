@@ -1,4 +1,4 @@
-# Replace
+# ImprovedReplace
 
 Python library to add some replace method improvements focused on common replacements to optimize code.
 
@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure you have Python and that the expected version is available from your command line. You can check this by running:
 
-``` Powerhell
+``` Powershell
 python --version
 ```
 
@@ -41,7 +41,7 @@ python -m pip install --upgrade pip setuptools wheel
 To install the latest version of ImprovedReplace:
 
 ``` Powershell
-pip install "ImprovedReplace"
+pip install improved-replace
 ```
 
 And then you can import this library in Python:
