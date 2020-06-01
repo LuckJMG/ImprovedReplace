@@ -54,7 +54,7 @@ string = "Hello World"
 string = replace.to_array(string)
 
 print(string)
-# Output: ["Hello", "World"]
+# Output: ['Hello', 'World']
 ```
 
 ## Built With
