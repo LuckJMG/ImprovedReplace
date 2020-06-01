@@ -49,7 +49,6 @@ And then you can import this library in Python:
 ``` Python
 import ImprovedReplace
 
-
 replace = ImprovedReplace()
 string = "Hello World"
 string = replace.to_array(string)
