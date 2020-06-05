@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure you have Python and that the expected version is available from your command line. You can check this by running:
 
-``` Powershell
+``` PowerShell
 python --version
 ```
 
@@ -18,7 +18,7 @@ You should get some output like Python 3.6.3. If you do not have Python, please 
 
 Additionally, you’ll need to make sure you have pip available. You can check this by running:
 
-``` Powershell
+``` PowerShell
 pip --version
 ```
 
@@ -26,13 +26,13 @@ If you installed Python from source, with an installer from [python.org](https:/
 
 If pip isn’t already installed, then first try to bootstrap it from the standard library:
 
-``` Powershell
+``` PowerShell
 python -m ensurepip --default-pip
 ```
 
 While pip alone is sufficient to install from pre-built binary archives, up to date copies of the setuptools and wheel projects are useful to ensure you can also install from source archives:
 
-``` Powershell
+``` PowerShell
 python -m pip install --upgrade pip setuptools wheel
 ```
 
@@ -40,14 +40,14 @@ python -m pip install --upgrade pip setuptools wheel
 
 To install the latest version of ImprovedReplace:
 
-``` Powershell
+``` PowerShell
 pip install improved-replace
 ```
 
 And then you can import this library in Python:
 
 ``` Python
-import ImprovedReplace
+from improved_replace import ImprovedReplace
 
 replace = ImprovedReplace()
 string = "Hello World"
@@ -56,6 +56,41 @@ string = replace.to_array(string)
 print(string)
 # Output: ['Hello', 'World']
 ```
+
+Or you can check the project in [PyPI](https://pypi.org/project/improved-replace/).
+
+## Running the tests
+
+To run automated module tests you first need to install py.test:
+
+``` PowerShell
+pip install py.test
+```
+
+Then you must to download the source code of the module in his [github repository](https://github.com/LuckJMG/ImprovedReplace), go to the tests folder with PowerShell and run pytest:
+
+``` PowerShell
+pytest
+```
+
+Pytest will detect all automatic tests to run and check them.
+
+### Some test examples
+
+These are some examples of the automated test
+
+``` Python
+def test_to_array(self):
+        '''Test to_array function.'''
+        assert test.to_array("Hello World") == ['Hello', 'World']           # Normal string
+        assert test.to_array(" H e l l o ") == ['H', 'e', 'l', 'l', 'o']    # Many spaces
+        assert test.to_array("           ") == []                           # Only spaces
+        assert test.to_array("HelloWorld!") == ['HelloWorld!']              # Any spaces
+
+```
+
+This test is testing all the general cases of the function `to_array` of the `ImprovedReplace` class and since
+the function is based on separating by space, the tests are based on that.
 
 ## Built With
 
@@ -82,6 +117,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* This is my first package of python
-* The idea occurred to me when I had to replace a few commas many times with periods or vice versa
-* Thank you all for getting here
+This is my first package of python and my first real open source project. The idea occurred to me when I had to
+replace a few commas many times with points or vice versa when i was practicing in the URI Online Judge.
+
+Thank you all for getting here, remember this is my first project and i'll learn more thank to this
