@@ -1,16 +1,12 @@
 #!/usr/bin/python3
 from improved_replace.core import ImprovedReplace
-import pytest
 
 # Class to test
 test = ImprovedReplace()
 
 # Testing class
 class TestImprovedReplace:
-    """Test ImprovedReplace Class.
-
-    Test all the functions of Improved replace class.
-    """
+    """Test ImprovedReplace Class."""
 
     def test_to_array(self):
         """Test to_array function."""

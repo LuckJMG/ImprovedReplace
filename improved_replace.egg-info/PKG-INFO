@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: improved-replace
-Version: 1.2.3
+Version: 1.2.4
 Summary: Add replace method improvements
 Home-page: https://github.com/LuckJMG/ImprovedReplace
 Author: LuckJMG
@@ -49,7 +49,7 @@ Description: # ImprovedReplace
         To install the latest version of ImprovedReplace:
         
         ``` PowerShell
-        pip install improved-replace
+        pip install -U improved-replace
         ```
         
         And then you can import this library in Python:
@@ -72,7 +72,7 @@ Description: # ImprovedReplace
         To run automated module tests you first need to install py.test:
         
         ``` PowerShell
-        pip install py.test
+        pip install -U py.test
         ```
         
         Then you must to download the source code of the module in his [github repository](https://github.com/LuckJMG/ImprovedReplace), go to the tests folder with PowerShell and run pytest:

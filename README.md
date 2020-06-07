@@ -41,7 +41,7 @@ python -m pip install --upgrade pip setuptools wheel
 To install the latest version of ImprovedReplace:
 
 ``` PowerShell
-pip install improved-replace
+pip install -U improved-replace
 ```
 
 And then you can import this library in Python:
@@ -64,7 +64,7 @@ Or you can check the project in [PyPI](https://pypi.org/project/improved-replace
 To run automated module tests you first need to install py.test:
 
 ``` PowerShell
-pip install py.test
+pip install -U py.test
 ```
 
 Then you must to download the source code of the module in his [github repository](https://github.com/LuckJMG/ImprovedReplace), go to the tests folder with PowerShell and run pytest:

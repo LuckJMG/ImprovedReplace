@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="improved_replace",
-    version="1.2.3",
+    version="1.2.4",
     description="Add replace method improvements",
     url="https://github.com/LuckJMG/ImprovedReplace",
     author="LuckJMG",
@@ -21,5 +21,5 @@ setup(
     ],
     python_requires=">=3.6",
     long_description_content_type="text/markdown",
-    packages=find_packages(),
+    packages=find_packages(exclude=["tests"]),
 )
