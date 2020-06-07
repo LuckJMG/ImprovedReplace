@@ -79,14 +79,13 @@ Pytest will detect all automatic tests to run and check them.
 
 These are some examples of the automated test
 
-``` Python
+```Python
 def test_to_array(self):
         '''Test to_array function.'''
-        assert test.to_array("Hello World") == ['Hello', 'World']           # Normal string
-        assert test.to_array(" H e l l o ") == ['H', 'e', 'l', 'l', 'o']    # Many spaces
-        assert test.to_array("           ") == []                           # Only spaces
-        assert test.to_array("HelloWorld!") == ['HelloWorld!']              # Any spaces
-
+        assert test.to_array("Hello World") == ['Hello', 'World']  # Normal string
+        assert test.to_array(" H e l l o ") == ['H', 'e', 'l', 'l', 'o']  # Many spaces
+        assert test.to_array("           ") == []  # Only spaces
+        assert test.to_array("HelloWorld!") == ['HelloWorld!']  # Any spaces
 ```
 
 This test is testing all the general cases of the function `to_array` of the `ImprovedReplace` class and since
@@ -94,8 +93,8 @@ the function is based on separating by space, the tests are based on that.
 
 ## Built With
 
-* [Python](https://www.python.org) - Programming language used
-* [VS Code](https://code.visualstudio.com/) - Code editor used
+- [Python](https://www.python.org) - Programming language used
+- [VS Code](https://code.visualstudio.com/) - Code editor used
 
 ## Contributing
 
@@ -107,7 +106,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Lucas Mosquera** - *Creator and Maintainer* - [LuckJMG](https://github.com/LuckJMG)
+- **Lucas Mosquera** - _Creator and Maintainer_ - [LuckJMG](https://github.com/LuckJMG)
 
 See also the list of [contributors](https://github.com/LuckJMG/ImprovedReplace/contributors) who participated in this project.
 
