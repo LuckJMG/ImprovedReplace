@@ -103,8 +103,8 @@ the function is based on separating by space, the tests are based on that.
 
 ## Built With
 
-- [Python](https://www.python.org) - Programming language used
-- [VS Code](https://code.visualstudio.com/) - Code editor used
+-   [Python](https://www.python.org) - Programming language used
+-   [VS Code](https://code.visualstudio.com/) - Code editor used
 
 ## Contributing
 
@@ -116,7 +116,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **Lucas Mosquera** - _Creator and Maintainer_ - [LuckJMG](https://github.com/LuckJMG)
+-   **Lucas Mosquera** - _Creator and Maintainer_ - [LuckJMG](https://github.com/LuckJMG)
 
 See also the list of [contributors](https://github.com/LuckJMG/ImprovedReplace/contributors) who participated in this project.
 
