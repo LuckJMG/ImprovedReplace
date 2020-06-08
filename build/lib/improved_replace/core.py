@@ -53,7 +53,7 @@ def to_comma(string):
     # Replace the points with strings in string
     try:
         string = string.replace(".", ",")
-    except TypeError:
+    except:
         print("The parameter string is not a str")
     finally:
         return string
