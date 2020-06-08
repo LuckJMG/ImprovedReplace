@@ -1,5 +1,7 @@
+# Top-most EditorConfig file
 root = true
 
+# Defaults
 [*]
 charset = utf-8
 end_of_line = CRLF
@@ -8,5 +10,6 @@ indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+# Spaces for python and markdown
 [*.{py,md}]
 indent_style = space
