@@ -1,31 +1,59 @@
 #!/usr/bin/python3
-class ImprovedReplace:
-    """Class to improve replace method
 
-    Class to add some replace method improvements focused on
-    common replacements to optimize code.
+
+def to_array(string):
+    """Converts a string to an array relative to its spaces.
+
+    Args:
+        string (str): The string to convert into array
+
+    Returns:
+        str: New array
     """
 
-    @classmethod
-    def to_array(cls, string):
-        """Converts a string to an array relative to its spaces."""
-
+    try:
         new_array = string.split(" ")  # Convert the string into array
         while "" in new_array:  # Check if the array contains empty strings
             new_array.remove("")
-
         return new_array
-
-    @classmethod
-    def comma_to_point(cls, string):
-        """Replaces all the commas in a string with points."""
-
-        string = string.replace(",", ".")  # Replace the commas with points in string
+    except:
+        print("The parameter string is not a str")
         return string
 
-    @classmethod
-    def point_to_comma(cls, string):
-        """Replaces all the points in a string with commas."""
 
-        string = string.replace(".", ",")  # Replace the points with commas in string
+def to_point(string):
+    """Replaces all the commas in a string with points.
+
+    Args:
+        string (str): String to change commas for points
+
+    Returns:
+        str: String with points
+    """
+
+    # Replace the commas with points in string
+    try:
+        string = string.replace(",", ".")
+    except:
+        print("The parameter string is not a str")
+    finally:
+        return string
+
+
+def to_comma(string):
+    """Replaces all the points in a string with commas.
+
+    Args:
+        string (str): String to change points for commas
+
+    Returns:
+        str: String with commas
+    """
+
+    # Replace the points with strings in string
+    try:
+        string = string.replace(".", ",")
+    except TypeError:
+        print("The parameter string is not a str")
+    finally:
         return string

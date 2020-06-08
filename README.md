@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Make sure you have Python and that the expected version is available from your command line. You can check this by running:
 
-``` PowerShell
+```PowerShell
 python --version
 ```
 
@@ -18,7 +18,7 @@ You should get some output like Python 3.6.3. If you do not have Python, please 
 
 Additionally, you’ll need to make sure you have pip available. You can check this by running:
 
-``` PowerShell
+```PowerShell
 pip --version
 ```
 
@@ -26,13 +26,13 @@ If you installed Python from source, with an installer from [python.org](https:/
 
 If pip isn’t already installed, then first try to bootstrap it from the standard library:
 
-``` PowerShell
+```PowerShell
 python -m ensurepip --default-pip
 ```
 
 While pip alone is sufficient to install from pre-built binary archives, up to date copies of the setuptools and wheel projects are useful to ensure you can also install from source archives:
 
-``` PowerShell
+```PowerShell
 python -m pip install --upgrade pip setuptools wheel
 ```
 
@@ -40,18 +40,17 @@ python -m pip install --upgrade pip setuptools wheel
 
 To install the latest version of ImprovedReplace:
 
-``` PowerShell
+```PowerShell
 pip install -U improved-replace
 ```
 
 And then you can import this library in Python:
 
-``` Python
-from improved_replace import ImprovedReplace
+```Python
+from improved_replace import to_array
 
-replace = ImprovedReplace()
 string = "Hello World"
-string = replace.to_array(string)
+string = to_array(string)
 
 print(string)
 # Output: ['Hello', 'World']
@@ -63,13 +62,13 @@ Or you can check the project in [PyPI](https://pypi.org/project/improved-replace
 
 To run automated module tests you first need to install py.test:
 
-``` PowerShell
+```PowerShell
 pip install -U py.test
 ```
 
 Then you must to download the source code of the module in his [github repository](https://github.com/LuckJMG/ImprovedReplace), go to the tests folder with PowerShell and run pytest:
 
-``` PowerShell
+```PowerShell
 pytest
 ```
 
@@ -80,15 +79,26 @@ Pytest will detect all automatic tests to run and check them.
 These are some examples of the automated test
 
 ```Python
-def test_to_array(self):
-        '''Test to_array function.'''
-        assert test.to_array("Hello World") == ['Hello', 'World']  # Normal string
-        assert test.to_array(" H e l l o ") == ['H', 'e', 'l', 'l', 'o']  # Many spaces
-        assert test.to_array("           ") == []  # Only spaces
-        assert test.to_array("HelloWorld!") == ['HelloWorld!']  # Any spaces
+def test_to_array():
+    """Test to_array function."""
+
+    # Normal string
+    assert to_array("Hello World") == ["Hello", "World"]
+
+    # Many spaces
+    assert to_array(" H e l l o ") == ["H", "e", "l", "l", "o"]
+
+    # Only spaces
+    assert to_array("           ") == []
+
+    # Any spaces
+    assert to_array("HelloWorld!") == ["HelloWorld!"]
+
+    # Not a string
+    assert to_array(None) == None
 ```
 
-This test is testing all the general cases of the function `to_array` of the `ImprovedReplace` class and since
+This test is testing all the general cases of the function `to_array` and since
 the function is based on separating by space, the tests are based on that.
 
 ## Built With
