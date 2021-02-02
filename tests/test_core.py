@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from improved_replace.core import *
 
-
 def test_to_array():
     """Test to_array function."""
 
